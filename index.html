@@ -1,10 +1,81 @@
-<html>
-  <head>
-    <title>First Page</title>
-  </head>
-  <body>
-    <h1>This is my public repository.</h1>
-    <hr>
-    <p>This is another paragraph</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes fadein {
+            50% {
+                opacity: 100%;
+            }
+            0%, 100% {
+                opacity: 0%
+            }
+        }
+        @keyframes fadein2 {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(2);
+            }
+        }
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+        #night_sky {
+            background-image: url(night_sky.webp);
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;  /* scale to cover screen */
+            background-position: center; /* keep image centered */
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+        #sunrise {
+            background-image: url(sunrise.webp);
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;  /* scale to cover screen */
+            background-position: center; /* keep image centered */
+            background-repeat: no-repeat;
+            position: absolute;
+            animation-name: fadein;
+            /* set the duration  */
+            animation-duration: 15s;
+            /* set the iterations */
+            animation-iteration-count: infinite;
+            /* set the direction */
+            animation-direction: alternate;
+        }
+        #sun {
+            width: 117px;
+            height: 200px;
+            background-image: url(you-are-my-sun-shine-lebron-james.webp);
+            position: absolute;
+            top: 50%;                   
+            left: 45%;   
+            transform: translate(-50%, -45%);
+            filter: drop-shadow(0px 0px 40px yellow);     
+            animation-name: fadein2;
+            /* set the duration  */
+            animation-duration: 15s;
+            /* set the iterations */
+            animation-iteration-count: infinite;
+            /* set the direction */
+            animation-direction: alternate;   
+            background-repeat: no-repeat;
+            background-size: cover;    
+        }
+    </style>
+</head>
+<body>
+    <div id="night_sky"></div>
+    <div id="sunrise"></div>
+    <div id="sun"></div>
+</body>
 </html>
