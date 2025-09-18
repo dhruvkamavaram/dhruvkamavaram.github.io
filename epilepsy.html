@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            float: left; 
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        @keyframes fadeout {
+            /* at 100% fade out the div box  */
+            100% {
+                opacity: 0;
+            }
+        }
+
+        #red{
+            background-color:red;
+            width: 14.2857142857%;
+            height: 1200px;
+            animation-name: fadeout;
+            /* set the suration  */
+            animation-duration: 2s;
+            /* set the animation timing */
+            animation-timing-function: cubic-bezier(6.7,0.67,0.67,6.7);
+            /* set the iterations */
+            animation-iteration-count: infinite;
+            /* set the direction */
+            animation-direction: alternate;
+        }
+        #orange{
+            background-color:orange;
+            width: 14.2857142857%;
+            height: 1200px;
+            animation-name: fadeout;
+            /* set the suration  */
+            animation-duration: 0.9s;
+            /* set the animation timing */
+            animation-timing-function: cubic-bezier(.91,.05,.16,.67);
+            /* set the iterations */
+            animation-iteration-count: infinite;
+            /* set the direction */
+            animation-direction: alternate;
+        }
+        #yellow{
+            background-color:yellow;
+            width: 14.2857142857%;
+            height: 1200px;
+            animation-name: fadeout;
+            /* set the suration  */
+            animation-duration: 2s;
+            /* set the animation timing */
+            animation-timing-function: cubic-bezier(0,.47,.16,.67);
+            /* set the iterations */
+            animation-iteration-count: infinite;
+            /* set the direction */
+            animation-direction: alternate;
+        }
+        #green{
+            background-color:green;
+            width: 14.2857142857%;
+            height: 1200px;
+            animation-name: fadeout;
+            /* set the suration  */
+            animation-duration: 0.6s;
+            /* set the animation timing */
+            animation-timing-function: cubic-bezier(.75,-0.78,.95,.76);
+            /* set the iterations */
+            animation-iteration-count: infinite;
+            /* set the direction */
+            animation-direction: alternate;
+        }
+        #blue{
+            background-color:blue;
+            width: 14.2857142857%;
+            height: 1200px;
+            animation-name: fadeout;
+            /* set the suration  */
+            animation-duration: 1s;
+            /* set the animation timing */
+            animation-timing-function: cubic-bezier(.46,.04,.18,1.2);
+            /* set the iterations */
+            animation-iteration-count: infinite;
+            /* set the direction */
+            animation-direction: alternate;
+        }
+        #violet{
+            background-color:blueviolet;
+            width: 14.2857142857%;
+            height: 1200px;
+            animation-name: fadeout;
+            /* set the suration  */
+            animation-duration: 0.967s;
+            /* set the animation timing */
+            animation-timing-function: cubic-bezier(0,1.89,1,.48);
+            /* set the iterations */
+            animation-iteration-count: infinite;
+            /* set the direction */
+            animation-direction: alternate;
+        }
+        #pink{
+            background-color:rgb(255, 80, 176);
+            width: 14.2857142857%;
+            height: 1200px;
+            animation-name: fadeout;
+            /* set the suration  */
+            animation-duration: 2s;
+            /* set the animation timing */
+            animation-timing-function: cubic-bezier(.7,.7,.32,.35);
+            /* set the iterations */
+            animation-iteration-count: infinite;
+            /* set the direction */
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="violet"></div>
+    <div id="pink"></div>
+</body>
+</html>
